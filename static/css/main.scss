@@ -1,0 +1,267 @@
+﻿@import "../../assets/css/base.scss";
+
+html, body, div, p, ul, li, ol, dl, dt, dd, header, footer, video, h1, h2, h3, h4, canvas, section, figure {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+html, body {
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+	font-family: "Helvetica Neue", 'Helvetica', "Microsoft YaHei", '微软雅黑', arial, sans-serif;
+	overflow-x: hidden;
+	font-size: 12px;
+	color: #fff !important;
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+}
+
+.clearfix {
+	clear: both;
+}
+
+input, textarea {
+	outline: none;
+}
+
+$color: #00bbd2;
+$viewW: 1000px;
+
+.zmiti-header {
+	width: 100%;
+	background: #000;
+
+	.zmiti-login-mask {
+		@include pos(f);
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 9999999;
+		background: rgba(0, 0, 0, 0.7);
+		$top: 200px;
+
+		.zmiti-login-C {
+			width: 470px;
+			height: 200px;
+			display: none;
+			@include pos(a);
+			left: 50%;
+			top: $top;
+			margin-left: -235px;
+			background: #fff;
+			border: 1px solid $color;
+			color: $color;
+
+			h2 {
+				text-align: center;
+				line-height: 80px;
+				color: $color;
+			}
+
+			.zmiti-login-form {
+				text-align: center;
+			}
+
+			input {
+				border: none;
+				margin: 0 15px;
+				height: 30px;
+				border-bottom: 1px solid $color;
+			}
+
+			.zmiti-login-close {
+				@include pos(a);
+				font-size: 26px;
+				right: 10px;
+				top: 0px;
+				cursor: pointer;
+			}
+
+			.zmiti-login-btn {
+				width: 60px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				margin: 40px auto;
+				background: $color;
+				@include br(5px);
+				color: #fff;
+				cursor: pointer;
+			}
+
+		}
+
+		.zmiti-ask-C {
+			width: 500px;
+			height: 300px;
+			background: #fff;
+			display: none;
+			border: 1px solid $color;
+			@include pos(a);
+			left: 50%;
+			margin-left: -250px;
+			top: $top;
+			color: $color;
+
+			ul {
+				margin-top: 20px;
+
+				li {
+					float: left;
+					width: 25%;
+					font-size: 16px;
+					text-align: center;
+					cursor: pointer;
+					color: #ccc;
+
+					&.active {
+						color: $color;
+
+						img {
+							opacity: 1;
+							@include transition(.2s);
+						}
+
+					}
+
+					img {
+						opacity: 0;
+						width: 30px;
+						display: block;
+						margin: 0 auto;
+					}
+
+				}
+
+			}
+
+			textarea {
+				width: 96%;
+				height: 150px;
+				border: 1px solid #ccc;
+				margin: 20px auto;
+				display: block;
+				resize: none;
+				padding: 10px;
+				box-sizing: border-box;
+			}
+
+			.zmiti-ask-close {
+				@include pos(a);
+				right: 10px;
+				top: 0;
+				font-size: 26px;
+				cursor: pointer;
+			}
+
+			.zmiti-submit-btn {
+				width: 60px;
+				height: 30px;
+				@include br(4px);
+				background: $color;
+				color: #fff;
+				line-height: 30px;
+				text-align: center;
+				margin-right: 2%;
+				float: right;
+			}
+
+		}
+
+	}
+
+}
+
+.zmiti-main-header {
+	width: $viewW;
+	margin: 0 auto;
+	height: 90px;
+	background: #000;
+	line-height: 90px;
+	font-size: 16px;
+
+	&>div {
+		float: left;
+	}
+
+	.zmiti-logo {
+		width: 260px;
+
+		img {
+			width: 220px;
+			vertical-align: middle;
+		}
+
+	}
+
+	.zmiti-nav {
+		width: 580px;
+		line-height: 106px;
+
+		li {
+			float: left;
+			width: 20%;
+
+			a {
+				color: #fff;
+			}
+
+		}
+
+	}
+
+	.zmiti-user-action {
+		width: $viewW - 580 - 260;
+		line-height: 23px;
+		text-align: center;
+
+		span {
+			float: left;
+			$size: 30px;
+			width: $size;
+			height: $size;
+			border: 1px solid #fff;
+			@include br();
+			margin: 0 5px;
+			@include pos(r);
+			top: 38px;
+			cursor: pointer;
+
+			img {
+				width: 16px;
+			}
+
+		}
+
+	}
+
+}
+
+.zmiti-footer {
+	width: 100%;
+	@include pos(f);
+	bottom: 0;
+	text-align: center;
+	line-height: 60px;
+	z-index: 99999;
+	color: #fff;
+	left: 0;
+	height: 60px;
+	background: #000 url(../images/footer-copyright.png) no-repeat center top;
+}

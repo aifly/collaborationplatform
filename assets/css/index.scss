@@ -14,7 +14,6 @@ li {
 }
 
 html, body {
-  height: 100%;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -45,6 +44,12 @@ $viewW: 1000px;
 
 #fly-main-ui {
   height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.zmiti-main-ui {
   width: $viewW;
   margin: 0 auto;
+  padding-bottom: 60px;
 }

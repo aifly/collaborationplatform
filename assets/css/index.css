@@ -29,7 +29,6 @@ li {
   list-style: none; }
 
 html, body {
-  height: 100%;
   -webkit-tap-highlight-color: transparent; }
 
 body {
@@ -53,7 +52,12 @@ input, textarea {
 
 #fly-main-ui {
   height: 100%;
-  width: 1000px;
+  width: 100%;
   margin: 0 auto; }
+
+.zmiti-main-ui {
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 60px; }
 
 /*# sourceMappingURL=index.css.map */

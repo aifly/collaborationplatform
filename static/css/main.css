@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/*.ant-btn:focus, .ant-btn:hover,.ant-input:focus, .ant-input:hover {
+    background-color: #fff;
+    border-color: #bf1616;
+    box-shadow: 0 0 0 2px rgba(191, 22, 22, 0.1);
+}*/
+.lt-full {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.zmiti-text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis; }
+
+html, body, div, p, ul, li, ol, dl, dt, dd, header, footer, video, h1, h2, h3, h4, canvas, section, figure {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+html, body {
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  font-family: "Helvetica Neue", 'Helvetica', "Microsoft YaHei", '微软雅黑', arial, sans-serif;
+  overflow-x: hidden;
+  font-size: 12px;
+  color: #fff !important; }
+
+img {
+  border: none;
+  vertical-align: middle;
+  width: 100%;
+  height: auto; }
+
+.clearfix {
+  clear: both; }
+
+input, textarea {
+  outline: none; }
+
+.zmiti-header {
+  width: 100%;
+  background: #000; }
+  .zmiti-header .zmiti-login-mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    background: rgba(0, 0, 0, 0.7); }
+    .zmiti-header .zmiti-login-mask .zmiti-login-C {
+      width: 470px;
+      height: 200px;
+      display: none;
+      position: absolute;
+      left: 50%;
+      top: 200px;
+      margin-left: -235px;
+      background: #fff;
+      border: 1px solid #00bbd2;
+      color: #00bbd2; }
+      .zmiti-header .zmiti-login-mask .zmiti-login-C h2 {
+        text-align: center;
+        line-height: 80px;
+        color: #00bbd2; }
+      .zmiti-header .zmiti-login-mask .zmiti-login-C .zmiti-login-form {
+        text-align: center; }
+      .zmiti-header .zmiti-login-mask .zmiti-login-C input {
+        border: none;
+        margin: 0 15px;
+        height: 30px;
+        border-bottom: 1px solid #00bbd2; }
+      .zmiti-header .zmiti-login-mask .zmiti-login-C .zmiti-login-close {
+        position: absolute;
+        font-size: 26px;
+        right: 10px;
+        top: 0px;
+        cursor: pointer; }
+      .zmiti-header .zmiti-login-mask .zmiti-login-C .zmiti-login-btn {
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin: 40px auto;
+        background: #00bbd2;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer; }
+    .zmiti-header .zmiti-login-mask .zmiti-ask-C {
+      width: 500px;
+      height: 300px;
+      background: #fff;
+      display: none;
+      border: 1px solid #00bbd2;
+      position: absolute;
+      left: 50%;
+      margin-left: -250px;
+      top: 200px;
+      color: #00bbd2; }
+      .zmiti-header .zmiti-login-mask .zmiti-ask-C ul {
+        margin-top: 20px; }
+        .zmiti-header .zmiti-login-mask .zmiti-ask-C ul li {
+          float: left;
+          width: 25%;
+          font-size: 16px;
+          text-align: center;
+          cursor: pointer;
+          color: #ccc; }
+          .zmiti-header .zmiti-login-mask .zmiti-ask-C ul li.active {
+            color: #00bbd2; }
+            .zmiti-header .zmiti-login-mask .zmiti-ask-C ul li.active img {
+              opacity: 1;
+              -webkit-transition: 0.2s;
+              transition: 0.2s; }
+          .zmiti-header .zmiti-login-mask .zmiti-ask-C ul li img {
+            opacity: 0;
+            width: 30px;
+            display: block;
+            margin: 0 auto; }
+      .zmiti-header .zmiti-login-mask .zmiti-ask-C textarea {
+        width: 96%;
+        height: 150px;
+        border: 1px solid #ccc;
+        margin: 20px auto;
+        display: block;
+        resize: none;
+        padding: 10px;
+        box-sizing: border-box; }
+      .zmiti-header .zmiti-login-mask .zmiti-ask-C .zmiti-ask-close {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        font-size: 26px;
+        cursor: pointer; }
+      .zmiti-header .zmiti-login-mask .zmiti-ask-C .zmiti-submit-btn {
+        width: 60px;
+        height: 30px;
+        border-radius: 4px;
+        background: #00bbd2;
+        color: #fff;
+        line-height: 30px;
+        text-align: center;
+        margin-right: 2%;
+        float: right; }
+
+.zmiti-main-header {
+  width: 1000px;
+  margin: 0 auto;
+  height: 90px;
+  background: #000;
+  line-height: 90px;
+  font-size: 16px; }
+  .zmiti-main-header > div {
+    float: left; }
+  .zmiti-main-header .zmiti-logo {
+    width: 260px; }
+    .zmiti-main-header .zmiti-logo img {
+      width: 220px;
+      vertical-align: middle; }
+  .zmiti-main-header .zmiti-nav {
+    width: 580px;
+    line-height: 106px; }
+    .zmiti-main-header .zmiti-nav li {
+      float: left;
+      width: 20%; }
+      .zmiti-main-header .zmiti-nav li a {
+        color: #fff; }
+  .zmiti-main-header .zmiti-user-action {
+    width: 160px;
+    line-height: 23px;
+    text-align: center; }
+    .zmiti-main-header .zmiti-user-action span {
+      float: left;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      margin: 0 5px;
+      position: relative;
+      top: 38px;
+      cursor: pointer; }
+      .zmiti-main-header .zmiti-user-action span img {
+        width: 16px; }
+
+.zmiti-footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  line-height: 60px;
+  z-index: 99999;
+  color: #fff;
+  left: 0;
+  height: 60px;
+  background: #000 url(../images/footer-copyright.png) no-repeat center top; }
+
+/*# sourceMappingURL=main.css.map */
