@@ -55,6 +55,7 @@ input, textarea {
   .zmiti-header .zmiti-login-mask {
     position: fixed;
     left: 0;
+    display: none;
     top: 0;
     width: 100%;
     height: 100%;
@@ -193,6 +194,179 @@ input, textarea {
       cursor: pointer; }
       .zmiti-main-header .zmiti-user-action span img {
         width: 16px; }
+
+.zmiti-detail-C {
+  display: none;
+  width: 600px;
+  background: #fff;
+  border: 1px solid #00bbd2;
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  margin-left: -300px;
+  color: #8d8d8d;
+  padding: 0 50px;
+  box-sizing: border-box;
+  padding-bottom: 30px; }
+  .zmiti-detail-C .zmiti-detail-title {
+    font-weight: bold;
+    color: #000;
+    font-size: 18px;
+    margin: 40px 0; }
+  .zmiti-detail-C .zmiti-detail-content {
+    text-indent: 2em;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc; }
+  .zmiti-detail-C .zmiti-detail-close {
+    position: absolute;
+    font-size: 26px;
+    right: 10px;
+    top: 0;
+    cursor: pointer; }
+  .zmiti-detail-C .zmiti-detail-bottom {
+    margin: 40px 0; }
+    .zmiti-detail-C .zmiti-detail-bottom > div {
+      float: left;
+      box-sizing: border-box;
+      height: 30px;
+      line-height: 30px;
+      font-size: 16px; }
+      .zmiti-detail-C .zmiti-detail-bottom > div:nth-of-type(1) {
+        width: 140px;
+        color: #00bbd2;
+        cursor: pointer; }
+        .zmiti-detail-C .zmiti-detail-bottom > div:nth-of-type(1) img {
+          width: 30px;
+          margin-right: 10px; }
+      .zmiti-detail-C .zmiti-detail-bottom > div:nth-of-type(2) {
+        width: 358px; }
+        .zmiti-detail-C .zmiti-detail-bottom > div:nth-of-type(2) > div {
+          float: left;
+          width: 33.3%;
+          text-align: center;
+          cursor: pointer; }
+          .zmiti-detail-C .zmiti-detail-bottom > div:nth-of-type(2) > div:nth-of-type(1) {
+            position: relative;
+            font-size: 14px; }
+            .zmiti-detail-C .zmiti-detail-bottom > div:nth-of-type(2) > div:nth-of-type(1).active {
+              color: #e17a41; }
+              .zmiti-detail-C .zmiti-detail-bottom > div:nth-of-type(2) > div:nth-of-type(1).active:before {
+                background: url(../../assets/images/collect.png) no-repeat right top; }
+            .zmiti-detail-C .zmiti-detail-bottom > div:nth-of-type(2) > div:nth-of-type(1):before {
+              content: '';
+              position: absolute;
+              left: 16px;
+              top: 8px;
+              width: 15px;
+              -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+              height: 13px;
+              background: url(../../assets/images/collect.png) no-repeat left top; }
+          .zmiti-detail-C .zmiti-detail-bottom > div:nth-of-type(2) > div:nth-of-type(2) {
+            background: #f5f6ee;
+            border-radius: 4px;
+            width: 28%;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin-right: 4.4%; }
+          .zmiti-detail-C .zmiti-detail-bottom > div:nth-of-type(2) > div:nth-of-type(3) {
+            width: 34%;
+            background: #01bcd4;
+            border-radius: 4px;
+            color: #fff;
+            border: 1px solid #01acc2;
+            box-sizing: border-box; }
+
+.zmiti-collect-C {
+  position: absolute;
+  width: 1000px;
+  display: none;
+  left: 50%;
+  margin-left: -500px;
+  height: 400px;
+  top: 120px; }
+  .zmiti-collect-C > div {
+    background: #fff;
+    width: 100%;
+    border: 1px solid #00bbd2;
+    box-sizing: border-box; }
+    .zmiti-collect-C > div:nth-of-type(1) {
+      width: 100%;
+      height: 70px; }
+      .zmiti-collect-C > div:nth-of-type(1) img {
+        width: 70px;
+        margin-top: -40px;
+        margin-left: 100px; }
+      .zmiti-collect-C > div:nth-of-type(1) span {
+        color: #00bbd2;
+        margin-left: 10px;
+        font-size: 16px;
+        font-weight: bold; }
+    .zmiti-collect-C > div:nth-of-type(2) {
+      margin-top: 10px;
+      height: 310px;
+      color: #000;
+      overflow: hidden;
+      position: relative; }
+      .zmiti-collect-C > div:nth-of-type(2) > div {
+        padding-bottom: 30px; }
+      .zmiti-collect-C > div:nth-of-type(2) ol {
+        width: 978px;
+        margin: 20px auto 0;
+        border: 1px solid #ccc;
+        border-bottom: none;
+        box-sizing: border-box;
+        height: 40px; }
+        .zmiti-collect-C > div:nth-of-type(2) ol li {
+          height: 40px;
+          line-height: 40px;
+          float: left;
+          text-align: center;
+          box-sizing: border-box; }
+          .zmiti-collect-C > div:nth-of-type(2) ol li:nth-of-type(1) {
+            width: 190px; }
+          .zmiti-collect-C > div:nth-of-type(2) ol li:nth-of-type(3) {
+            width: 180px; }
+          .zmiti-collect-C > div:nth-of-type(2) ol li:nth-of-type(2) {
+            width: 600px;
+            max-width: 600px;
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc; }
+      .zmiti-collect-C > div:nth-of-type(2) ul {
+        width: 978px;
+        margin: 0 auto;
+        border-left: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        box-sizing: border-box; }
+        .zmiti-collect-C > div:nth-of-type(2) ul li {
+          clear: left;
+          width: 100%;
+          text-align: center;
+          height: 40px;
+          border-right: 1px solid #ccc;
+          border-bottom: 1px solid #ccc; }
+          .zmiti-collect-C > div:nth-of-type(2) ul li:hover {
+            background: #eee; }
+          .zmiti-collect-C > div:nth-of-type(2) ul li .zmiti-collect-del {
+            position: relative; }
+          .zmiti-collect-C > div:nth-of-type(2) ul li > div {
+            float: left;
+            box-sizing: border-box;
+            height: 40px;
+            line-height: 40px; }
+            .zmiti-collect-C > div:nth-of-type(2) ul li > div:nth-of-type(1) {
+              width: 190px; }
+              .zmiti-collect-C > div:nth-of-type(2) ul li > div:nth-of-type(1) img {
+                width: 40px; }
+            .zmiti-collect-C > div:nth-of-type(2) ul li > div:nth-of-type(3) {
+              width: 180px;
+              cursor: pointer;
+              color: #f00; }
+            .zmiti-collect-C > div:nth-of-type(2) ul li > div:nth-of-type(2) {
+              width: 600px;
+              max-width: 600px;
+              border-left: 1px solid #ccc;
+              border-right: 1px solid #ccc; }
 
 .zmiti-footer {
   width: 100%;

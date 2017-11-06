@@ -49,6 +49,7 @@ $viewW: 1000px;
 	.zmiti-login-mask {
 		@include pos(f);
 		left: 0;
+		display: none;
 		top: 0;
 		width: 100%;
 		height: 100%;
@@ -245,6 +246,268 @@ $viewW: 1000px;
 
 			img {
 				width: 16px;
+			}
+
+		}
+
+	}
+
+}
+
+.zmiti-detail-C {
+	display: none;
+	width: 600px;
+	background: #fff;
+	border: 1px solid $color;
+	@include pos(a);
+	left: 50%;
+	top: 200px;
+	margin-left: -300px;
+	color: #8d8d8d;
+	padding: 0 50px;
+	box-sizing: border-box;
+	padding-bottom: 30px;
+
+	.zmiti-detail-title {
+		font-weight: bold;
+		color: #000;
+		font-size: 18px;
+		margin: 40px 0;
+	}
+
+	.zmiti-detail-content {
+		text-indent: 2em;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #ccc;
+	}
+
+	.zmiti-detail-close {
+		@include pos(a);
+		font-size: 26px;
+		right: 10px;
+		top: 0;
+		cursor: pointer;
+	}
+
+	.zmiti-detail-bottom {
+		margin: 40px 0;
+
+		&>div {
+			float: left;
+			box-sizing: border-box;
+			height: 30px;
+			line-height: 30px;
+			font-size: 16px;
+
+			&:nth-of-type(1) {
+				width: 140px;
+				color: $color;
+				cursor: pointer;
+
+				img {
+					width: 30px;
+					margin-right: 10px;
+				}
+
+			}
+
+			&:nth-of-type(2) {
+				width: 358px;
+
+				&>div {
+					float: left;
+					width: 33.3%;
+					text-align: center;
+					cursor: pointer;
+
+					&:nth-of-type(1) {
+						@include pos(r);
+						font-size: 14px;
+
+						&.active {
+							color: #e17a41;
+
+							&:before {
+								background: url(../../assets/images/collect.png) no-repeat right top;
+							}
+
+						}
+
+						&:before {
+							content: '';
+							@include pos(a);
+							left: 16px;
+							top: 8px;
+							width: 15px;
+							@include transform(scale(1.2));
+							height: 13px;
+							background: url(../../assets/images/collect.png) no-repeat left top;
+						}
+
+					}
+
+					&:nth-of-type(2) {
+						background: #f5f6ee;
+						@include br(4px);
+						width: 28%;
+						border: 1px solid #ccc;
+						box-sizing: border-box;
+						margin-right: 4.4%;
+					}
+
+					&:nth-of-type(3) {
+						width: 34%;
+						background: #01bcd4;
+						@include br(4px);
+						color: #fff;
+						border: 1px solid #01acc2;
+						box-sizing: border-box;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.zmiti-collect-C {
+	@include pos(a);
+	width: 1000px;
+	display: none;
+	left: 50%;
+	margin-left: -500px;
+	height: 400px;
+	top: 120px;
+
+	&>div {
+		background: #fff;
+		width: 100%;
+		border: 1px solid $color;
+		box-sizing: border-box;
+
+		&:nth-of-type(1) {
+			width: 100%;
+			height: 70px;
+
+			img {
+				width: 70px;
+				margin-top: -40px;
+				margin-left: 100px;
+			}
+
+			span {
+				color: $color;
+				margin-left: 10px;
+				font-size: 16px;
+				font-weight: bold;
+			}
+
+		}
+
+		&:nth-of-type(2) {
+			margin-top: 10px;
+			height: 310px;
+			color: #000;
+			overflow: hidden;
+			@include pos(r);
+
+			&>div {
+				padding-bottom: 30px;
+			}
+
+			ol {
+				width: 978px;
+				margin: 20px auto 0;
+				border: 1px solid #ccc;
+				border-bottom: none;
+				box-sizing: border-box;
+				height: 40px;
+
+				li {
+					height: 40px;
+					line-height: 40px;
+					float: left;
+					text-align: center;
+					box-sizing: border-box;
+
+					&:nth-of-type(1) {
+						width: 190px;
+					}
+
+					&:nth-of-type(3) {
+						width: 180px;
+					}
+
+					&:nth-of-type(2) {
+						width: 600px;
+						max-width: 600px;
+						border-left: 1px solid #ccc;
+						border-right: 1px solid #ccc;
+					}
+
+				}
+
+			}
+
+			ul {
+				width: 978px;
+				margin: 0 auto;
+				border-left: 1px solid #ccc;
+				border-top: 1px solid #ccc;
+				box-sizing: border-box;
+
+				li {
+					clear: left;
+					width: 100%;
+					text-align: center;
+					height: 40px;
+					border-right: 1px solid #ccc;
+					border-bottom: 1px solid #ccc;
+
+					&:hover {
+						background: #eee;
+					}
+
+					.zmiti-collect-del {
+						@include pos(r);
+					}
+
+					&>div {
+						float: left;
+						box-sizing: border-box;
+						height: 40px;
+						line-height: 40px;
+
+						&:nth-of-type(1) {
+							width: 190px;
+
+							img {
+								width: 40px;
+							}
+
+						}
+
+						&:nth-of-type(3) {
+							width: 180px;
+							cursor: pointer;
+							color: #f00;
+						}
+
+						&:nth-of-type(2) {
+							width: 600px;
+							max-width: 600px;
+							border-left: 1px solid #ccc;
+							border-right: 1px solid #ccc;
+						}
+
+					}
+
+				}
+
 			}
 
 		}

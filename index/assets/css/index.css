@@ -53,8 +53,17 @@
   background: #fff;
   padding: 0 4px; }
 .zmiti-index-main-ui .ant-table-tbody > tr > td {
-  border-bottom: 20px solid  #000 !important;
+  border-bottom: none !important;
+  padding-bottom: 30px !important;
   position: relative; }
+  .zmiti-index-main-ui .ant-table-tbody > tr > td:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background: #000;
+    left: 0;
+    bottom: 0; }
   .zmiti-index-main-ui .ant-table-tbody > tr > td div {
     position: absolute;
     width: 100%;
@@ -66,21 +75,27 @@
     .zmiti-index-main-ui .ant-table-tbody > tr > td div.status-0 {
       background: #f00; }
     .zmiti-index-main-ui .ant-table-tbody > tr > td div.status-1 {
-      background: #ddd; }
+      background: #ddd;
+      color: #000; }
     .zmiti-index-main-ui .ant-table-tbody > tr > td div.status-2 {
       background: green; }
   .zmiti-index-main-ui .ant-table-tbody > tr > td:last-of-type {
     text-align: center;
     padding: 0; }
+.zmiti-index-main-ui .ant-table-tbody > tr:last-of-type td {
+  border: none !important; }
 .zmiti-index-main-ui .ant-table-tbody {
   background: #444353 !important;
   color: #fff !important; }
 .zmiti-index-main-ui .ant-pagination-jump-next {
   background: #fff !important; }
+.zmiti-index-main-ui .zmiti-search-input {
+  width: 100%; }
 .zmiti-index-main-ui .zmiti-index-search-C {
   margin: 40px 0; }
   .zmiti-index-main-ui .zmiti-index-search-C ul li {
-    width: 20%;
+    width: 100px;
+    margin-right: 10px;
     float: left;
     box-sizing: border-box;
     height: 30px;
@@ -89,7 +104,13 @@
     -webkit-transition: 0.5s;
     transition: 0.5s;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    text-align: center; }
+    .zmiti-index-main-ui .zmiti-index-search-C ul li:nth-of-type(1) {
+      width: 60px;
+      text-align: left; }
+    .zmiti-index-main-ui .zmiti-index-search-C ul li input {
+      width: 100px; }
     .zmiti-index-main-ui .zmiti-index-search-C ul li:after {
       content: '';
       position: absolute;
@@ -102,9 +123,6 @@
       transform: translate(-100%, 0);
       -webkit-transition: 0.2s;
       transition: 0.2s; }
-    .zmiti-index-main-ui .zmiti-index-search-C ul li:hover:after {
-      -webkit-transform: translate(0, 0);
-      transform: translate(0, 0); }
     .zmiti-index-main-ui .zmiti-index-search-C ul li:hover {
       color: #00b0c5; }
 
