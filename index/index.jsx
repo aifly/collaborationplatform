@@ -88,9 +88,12 @@ class ZmitiIndexApp extends Component {
       }, {
         title: '标的编号',
         width: 100,
-        dataIndex: 'id',
+        dataIndex: '',
         key: 'id',
-        fixed: 'left'
+        fixed: 'left',
+        render: (record) => <div className='zmiti-name'>
+           {record.id}
+      </div>,
       }, {
         title: '标的名称',
         dataIndex: 'name',
@@ -189,7 +192,7 @@ class ZmitiIndexApp extends Component {
 
        </div>
 
-       <section onMouseOver={this.tableMouseover.bind(this)} onMouseOut={this.tableMouseout.bind(this)}>
+    <section onMouseOver={this.tableMouseover.bind(this)} onMouseOut={this.tableMouseout.bind(this)}>
          <Table  pagination={{
             size:'middle',
             pageSize:

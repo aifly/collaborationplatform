@@ -37,10 +37,20 @@ var ZmitiUtil = {
 
 		this.setSize();
 
-		setTimeout(function() {
-			this.renderCollect();
-		}.bind(this), 1000)
+		this.setDefault();
 
+
+
+	},
+
+	setDefault: function() {
+		var mc = $('.mc').html();
+		$('.lx-nav li').each(function(i, n) {
+
+			if (mc === $(n).text()) {
+				$(n).addClass('active');
+			}
+		});
 	},
 	bindEvent: function() {
 		var s = this;
@@ -88,6 +98,7 @@ var ZmitiUtil = {
 			s.toggleMask('none', '.zmiti-detail-C');
 			s.toggleMask('none', '.zmiti-ask-C');
 			s.toggleMask('none', '.zmiti-collect-C');
+			$('#zmiti-qrcode').remove();
 		});
 
 		$('.zmiti-ask-C li').on('click', function() {
@@ -121,6 +132,7 @@ var ZmitiUtil = {
 
 		$('.zmiti-detail-close').on('click', function() {
 			s.toggleMask('none', '.zmiti-detail-C');
+			$('#zmiti-qrcode').remove()
 		});
 
 		$('#zmiti-ask-key').on('click', function() {
@@ -137,6 +149,22 @@ var ZmitiUtil = {
 
 			window.username = username;
 			username && $('.zmiti-collect-top span').html(username)
+		});
+
+		$('.zmiti-detail-bottom-right div:eq(-1)').on('click', function() {
+			var img = document.createElement('img');
+			img.src = './assets/images/qrcode.png';
+			img.style.position = 'absolute';
+			img.style.left = '50%';
+			img.style.width = '200px';
+			img.style.marginLeft = '-100px'
+			img.style.top = '40px';
+			img.id = 'zmiti-qrcode';
+			img.style.boxShadow = '0 0 20px rgba(0,0,0,.5)'
+			$('#zmiti-qrcode').remove()
+
+			$('.zmiti-detail-C').append(img);
+
 		});
 	},
 
@@ -173,7 +201,7 @@ var ZmitiUtil = {
 		var ul = $('.zmiti-collect-content>div>ul');
 
 		var html = '';
-
+		window.dataSource = window.dataSource || [];
 		var len = window.dataSource.length;
 		for (var i = 0; i < len; i++) {
 			html += '<li><div>' + window.dataSource[i].id + '</div><div>' + window.dataSource[i].name + '</div><div class="zmiti-collect-del" data-key=' + window.dataSource[i].key + '>删除</div></li>'

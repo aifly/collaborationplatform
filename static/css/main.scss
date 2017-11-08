@@ -219,6 +219,13 @@ $viewW: 1000px;
 			float: left;
 			width: 20%;
 
+			&.active {
+				a {
+					color: $color;
+				}
+
+			}
+
 			a {
 				color: #fff;
 			}
@@ -233,11 +240,10 @@ $viewW: 1000px;
 		text-align: center;
 
 		span {
-			float: left;
+			float: right;
 			$size: 30px;
 			width: $size;
 			height: $size;
-			border: 1px solid #fff;
 			@include br();
 			margin: 0 5px;
 			@include pos(r);
@@ -245,7 +251,6 @@ $viewW: 1000px;
 			cursor: pointer;
 
 			img {
-				width: 16px;
 			}
 
 		}
