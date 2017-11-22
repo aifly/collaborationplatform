@@ -86,7 +86,7 @@ class ZmitiIndexApp extends Component {
            <img src={'./assets/images/ico'+(record.status+1)+'.png'}/>
       </div>,
       }, {
-        title: '标的编号',
+        title: '产品编号',
         width: 100,
         dataIndex: '',
         key: 'id',
@@ -95,7 +95,7 @@ class ZmitiIndexApp extends Component {
            {record.id}
       </div>,
       }, {
-        title: '标的名称',
+        title: '产品名称',
         dataIndex: 'name',
         key: 'name',
         fixed: false
@@ -116,6 +116,16 @@ class ZmitiIndexApp extends Component {
         key: 'saleDate',
         width: 100
       }, {
+        title: '交易份额',
+        dataIndex: 'saleMoney',
+        key: 'saleMoney',
+        width: 100
+      }, {
+        title: '交易单价',
+        dataIndex: 'price',
+        key: 'price',
+        width: 100
+      }, {
         title: '交付时间',
         dataIndex: 'deliveryDate',
         key: 'deliveryDate',
@@ -132,9 +142,9 @@ class ZmitiIndexApp extends Component {
     ]
 
     return <div className='zmiti-index-main-ui'>
-       <h3 className='zmiti-index-notice-title'>关于交易公告</h3>
+       <h3 className='zmiti-index-notice-title'>关于产品货架</h3>
        <div className='zmiti-index-notice'>
-          键入文本这么多的国防知识产权服务，包括国防专利代理、国防专利分析挖掘、国防专利战略等系列内容。由于国防专利具有涉密特性，ICI中心 
+          “交易所挂牌的产品类型，为技术买家与服务机构购买挂牌交易技术产品提供指导。”
        </div>
 
        <div className='zmiti-index-search-C'>
@@ -153,11 +163,11 @@ class ZmitiIndexApp extends Component {
                       style={{ width: 100 }}
                       placeholder="技术单位"
                     >
-                      <Option value="军工">军工</Option>
-                      <Option value="军方单位">军方单位</Option>
+                      <Option value="军工">军方机构</Option>
+                      <Option value="军方单位">军工企业</Option>
                       <Option value="国有企业">国有企业</Option>
                       <Option value="企业">企业</Option>
-                      <Option value="院所">院所</Option>
+                      <Option value="院所">高校院所</Option>
                     </Select>
                 </li>
                 <li>
@@ -166,8 +176,8 @@ class ZmitiIndexApp extends Component {
                       placeholder="特殊技术"
                     >
                       <Option value="1">军用技术</Option>
-                      <Option value="2">前沿技术</Option>
-                      <Option value="3">贸易限制</Option>
+                      <Option value="2">贸易限制</Option>
+                      <Option value="3">领袖专家</Option>
                     </Select>
                 </li>
                 <li>
