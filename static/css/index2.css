@@ -1,7 +1,7 @@
 .inner{width: 1000px;margin: 0 auto;}
 .clear{clear:both}
 .hr45{height: 45px;overflow: hidden;}
-body{background-color: #000;}
+body{background-color: #FDFEFF;}
 .bigImg {height: 600px; background: url(../images/index-bigImg.jpg) center top no-repeat;text-align: center;}
 .bigImg-tit {font-size: 48px; height: 60px; line-height: 60px; color: #FFF; padding: 100px 0 30px;}
 .bigImg-box {width: 480px; padding: 50px 260px 0; height: 50px;}
@@ -13,7 +13,7 @@ body{background-color: #000;}
 .bigImg-tex li {width: 160px; height: 50px;  line-height: 50px; color: #FFF; font-size: 20px; float: left; margin: 0 50px;}
 
 .about-title {text-align: center; font-size: 40px; font-weight: bold; color: #00BCD3; line-height: 48px; padding: 80px 0 20px;}
-.about-summary {font-size: 18px; text-indent: 2em; padding:0 50px 50px; line-height: 30px;color: #fff;}
+.about-summary {font-size: 18px; text-indent: 2em; padding:0 50px 50px; line-height: 30px;color: #333;}
 
 
 
@@ -24,7 +24,7 @@ body{background-color: #000;}
 .product .img {width: 120px; height: 120px;border-radius: 50%; background: url(../images/index-product-img01.jpg) center center no-repeat;}
 .product .title {  height: 50px;  line-height: 50px; font-size: 22px; color: #00BCD3;}
 .product .title a { color: #00BCD3;}
-.product .summary{   font-size: 16px;  line-height: 28px;color: #fff;}
+.product .summary{   font-size: 16px;  line-height: 28px;color: #333;}
 .product .img01 {  background: url(../images/index-product-img02.jpg) -140px center no-repeat;}
 .product .img02 {  background: url(../images/index-product-img03.jpg) -80px center no-repeat;}
 .product .img03 {  background: url(../images/index-product-img04.jpg) -80px center no-repeat;}
