@@ -77,6 +77,9 @@
     .zmiti-index-main-ui .ant-table-tbody > tr > td div.status-1 {
       background: #ddd;
       color: #000; }
+      .zmiti-index-main-ui .ant-table-tbody > tr > td div.status-1:hover {
+        color: #fff;
+        background: #f00; }
     .zmiti-index-main-ui .ant-table-tbody > tr > td div.status-2 {
       background: green; }
   .zmiti-index-main-ui .ant-table-tbody > tr > td:last-of-type {

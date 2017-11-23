@@ -93,6 +93,12 @@
       &.status-1 {
         background: #ddd;
         color: #000;
+
+        &:hover {
+          color: #fff;
+          background: #f00;
+        }
+
       }
 
       &.status-2 {

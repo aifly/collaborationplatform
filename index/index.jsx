@@ -135,8 +135,8 @@ class ZmitiIndexApp extends Component {
         key: 'operation',
         fixed: 'right',
         width: 100,
-        render: (record, i, value) => <div onClick={this.showDetail.bind(this,record,i,value)} className={'status-'+record.status}>
-        {record.status === 0 ? '未处理':record.status===1?'正在处理':'已完成'}
+        render: (record, i, value) => <div onClick={this.showDetail.bind(this,record,i,value)} className={'status-1'}>
+        {record.status === 0 ? '查看详情':record.status===1?'查看详情':'查看详情'}
       </div>,
       }
     ]
@@ -214,7 +214,7 @@ class ZmitiIndexApp extends Component {
             itemRender:this.itemRender.bind(this)
              }} size='middle'
              
-              columns={columns} dataSource={this.state.dataSource} scroll={{ x: 1500 }}/>
+              columns={columns} dataSource={this.state.dataSource} scroll={{ x: 1600 }}/>
        </section>
     </div>
 
