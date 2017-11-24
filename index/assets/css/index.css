@@ -94,6 +94,10 @@
   background: #fff !important; }
 .zmiti-index-main-ui .zmiti-search-input {
   width: 100%; }
+.ant-cascader-picker-label {
+  color: #bfbfbf; }
+.ant-cascader-menu .ant-cascader-menu-item {
+  color: #000 !important; }
 .zmiti-index-main-ui .zmiti-index-search-C {
   margin: 40px 0; }
   .zmiti-index-main-ui .zmiti-index-search-C ul li {

@@ -273,6 +273,13 @@ $viewW: 1000px;
 	box-sizing: border-box;
 	padding-bottom: 30px;
 
+	&.blur {
+		h3, .zmiti-detail-content, .zmiti-detail-bottom {
+			-webkit-filter: blur(2px)
+		}
+
+	}
+
 	.zmiti-detail-title {
 		font-weight: bold;
 		color: #000;

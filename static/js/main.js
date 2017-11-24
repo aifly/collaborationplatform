@@ -99,6 +99,8 @@ var ZmitiUtil = {
 			s.toggleMask('none', '.zmiti-ask-C');
 			s.toggleMask('none', '.zmiti-collect-C');
 			$('#zmiti-qrcode').remove();
+
+			$('.zmiti-detail-C').removeClass('blur')
 		});
 
 		$('.zmiti-ask-C li').on('click', function() {
@@ -133,6 +135,7 @@ var ZmitiUtil = {
 		$('.zmiti-detail-close').on('click', function() {
 			s.toggleMask('none', '.zmiti-detail-C');
 			$('#zmiti-qrcode').remove()
+			$('.zmiti-detail-C').removeClass('blur')
 		});
 
 		$('#zmiti-ask-key').on('click', function() {
@@ -163,7 +166,7 @@ var ZmitiUtil = {
 			img.style.boxShadow = '0 0 20px rgba(0,0,0,.5)'
 			$('#zmiti-qrcode').remove()
 
-			$('.zmiti-detail-C').append(img);
+			$('.zmiti-detail-C').addClass('blur').append(img);
 
 		});
 	},

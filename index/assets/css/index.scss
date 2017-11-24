@@ -148,6 +148,20 @@
     width: 100%;
   }
 
+  @at-root.ant-cascader-picker-label {
+    color: #bfbfbf;
+  }
+
+  @at-root.ant-cascader-menu {
+    .ant-cascader-menu-item {
+      color: #000 !important;
+    }
+
+    .ant-cascader-picker-label {
+    }
+
+  }
+
   .zmiti-index-search-C {
     margin: 40px 0;
 
